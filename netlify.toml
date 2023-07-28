@@ -1,4 +1,9 @@
 [[redirects]]
+from = '/gr
+to = 'https://drhayes.itch.io/gemini-rising'
+force = true
+
+[[redirects]]
 from = '*'
 to = 'https://drhayes.io'
 force = true
