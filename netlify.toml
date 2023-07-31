@@ -1,9 +1,5 @@
-[[redirects]]
-  from = '/gr'
-  to = 'https://drhayes.itch.io/gemini-rising'
-  force = true
+[build]
+  publish = 'site/'
 
-[[redirects]]
-  from = '*'
-  to = 'https://drhayes.io'
-  force = true
+  command = 'make'
+
