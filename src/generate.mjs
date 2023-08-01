@@ -12,6 +12,6 @@ const redirects = await Promise.all(linksPaths.map(async (linkPath) => {
   return `${code}	${destination.trim()}`;
 }));
 
-redirects.push('/*	https://drhayes.io');
+redirects.push('/*	https://drhayes.io	301!');
 
 await writeFile(redirectPath, redirects.join('\n'), { encoding: 'utf8' });
