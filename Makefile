@@ -1,8 +1,7 @@
 LINKS = $(wildcard links/*)
 
 site/_redirects: site $(LINKS)
-	touch $@
-	echo "/*	https://drhayes.io" >> $@
+	node src/generate.mjs $@ $(LINKS)
 
 site:
 	mkdir $@
